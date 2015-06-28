@@ -48,7 +48,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated method stub
 db.execSQL(CREATE_PROVINCE);//创建province表
 db.execSQL(CREATE_CITY);//创建city表
-db.execSQL(CREATE_PROVINCE);//创建county表
+db.execSQL(CREATE_COUNTY);//创建county表
 	}
 
 	@Override

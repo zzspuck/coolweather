@@ -7,13 +7,10 @@ import com.coolweather.app.model.City;
 import com.coolweather.app.model.County;
 import com.coolweather.app.model.Province;
 
-import android.R.string;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.provider.VoicemailContract;
-import android.provider.Contacts.Intents.Insert;
 
 /** 
  * @author зїеп E-mail: 
@@ -115,7 +112,7 @@ public List<City> loadCities(int provinceId){
 	
 	List<City> list=new ArrayList<City>();
 	Cursor cursor=db
-			.query("city", null,"provinceId=?", new String[]{String.valueOf(provinceId)}, null, null, null);
+			.query("city", null,"province_id=?", new String[]{String.valueOf(provinceId)}, null, null, null);
 	
 	if (cursor.moveToFirst()) {
 		do {
